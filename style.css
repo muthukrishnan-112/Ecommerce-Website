@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
+}
+.navbar h1{
+    padding-left: 40px;
+}
+.nav-links{
+    display: flex;
+}
+.nav-link{
+    padding: 10px 20px;
+    
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+   
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+.bar{
+    font-size: 30px;
+    display: none;
+}
+.side-bar{
+ background-color:#1d232c;
+ width: 50%;
+ height: 100%;
+position: fixed ;
+top: 0;
+left: -60%;
+transition: 2s;
+padding: 20px;
+color: white;
+}
+.sidenav{
+    margin-bottom: 50px;
+}
+.sidenav a{
+    color: white;
+    text-decoration: none;   
+}
+.sidenav a:hover{
+    text-decoration: underline;
+
+}
+/*header*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    
+}
+.header button a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+} 
+.h-b{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #1d232c;
+    color: white;
+    margin-top: 10px;
+}
+/*service*/
+
+.service{
+    padding: 20px;
+}
+.s-container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.s-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.s-container2 div{
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+/*new arrival*/
+
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.n-a-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.n-a-container button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    color: #1d232c;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius: 10px;
+    border: none;
+}
+/*news*/
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: 3px solid black;
+}
+.news button{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: #1d232c;
+    border-radius: 10px; 
+    padding: 10px;
+}
+/*footer*/
+
+.footer{
+    text-align: center;
+    margin-top: 10px;
+    color: #f2f4f7;
+    background-color: #1d232c;
+    padding: 10px;
+}
+/*Collection*/
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.product-search input{
+    border: none;
+    background: transparent;
+    width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+
+
+}
+.products{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.product-box img{
+    opacity: 4.5;
+    border-radius: 10px;
+
+}
+.product-box img:hover{
+    opacity: 0.8;
+}
+
+.product-box p{
+    text-align: center;
+    flex-basis: 20%;
+}
+/*colloction*/
+
+.contact-container{
+    background-color:gray;
+    width: 80%;
+    height: 90vh;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+.inside-container{
+    padding: 20px;
+    
+}
+.inside-container label{
+    font-weight: bold;
+}
+.inside-container input{
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+.inside-container input:focus{
+    outline: none;
+}
+.inside-container textarea{
+    width: 100%;
+    height: 100px;
+}
+.inside-container textarea:focus{
+    outline: none;
+}
+.inside-container button{
+    padding: 10px;
+    border: none;
+    background-color: rgb(6, 179, 248);
+    color:black ;
+    font-weight: bold;
+}
+.btn{
+    padding-top: 10px;
+}
+
+
+@media screen and (max-width:700px){
+    .nav-links{
+        display: none;
+    }
+    .header{
+        margin-left: 6%;
+    }
+    .bar{
+        display: block;
+    }
+    .h-img{
+        display: none;
+    }
+    .s-container1{
+        display: none;
+    }
+    .s-container2{
+        flex-direction: column;
+    }
+}
